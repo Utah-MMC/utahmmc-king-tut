@@ -1,8 +1,13 @@
+
+
+
+
 /*
   Usage: ts-node scripts/generate-city-pages.ts data/cities/cities.csv
   - Ensures stub YAMLs exist for UT cities
   - Writes data/cities.json with dynamic city page paths for sitemap
 */
+import siteConfig from '../../utah-mmc-site.config';
 import fs from 'node:fs'
 import path from 'node:path'
 import Papa from 'papaparse'
